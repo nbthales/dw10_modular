@@ -6,7 +6,7 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Modular.setInitialRoute('/home');
+    Modular.setInitialRoute('/login');
 
     return MaterialApp.router(
       title: 'Application Name',

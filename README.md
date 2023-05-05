@@ -1,6 +1,7 @@
 # dw10_modular
 
 Pré Imersão Dart Week - Entendendo o Flutter Modular
+https://www.youtube.com/live/hACdp3mmPYE?feature=share
 
 ## Comandos úteis
 

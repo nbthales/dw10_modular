@@ -12,13 +12,23 @@ class HomePage extends StatelessWidget {
         title: const Text('Home Page'),
       ),
       body: Center(
-          child: ElevatedButton(
-        onPressed: () {
-          debugPrint('hashcode da classe repository');
-          final pessoa = context.read<PessoaRepository>();
-          debugPrint(pessoa.hashCode.toString());
-        },
-        child: const Text('Recuperar instancia'),
+          child: Column(
+        children: [
+          Text(Modular.args.data ?? ''),
+          Text(Modular.args.queryParams.toString()),
+          Text(Modular.args.params.toString()),
+          const SizedBox(
+            height: 20,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              debugPrint('hashcode da classe repository');
+              final pessoa = context.read<PessoaRepository>();
+              debugPrint(pessoa.hashCode.toString());
+            },
+            child: const Text('Recuperar instancia'),
+          ),
+        ],
       )),
     );
   }
